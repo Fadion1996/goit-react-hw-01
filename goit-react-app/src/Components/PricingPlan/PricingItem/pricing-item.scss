@@ -1,0 +1,25 @@
+.pricing-item {
+    padding: 20px;
+
+    .pricing-item-img {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: flex-end;
+        margin: 0 auto;
+    }
+    .pricing-item-discription {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #a9a9a9;
+
+        h2, p {
+            padding: 0.5rem;
+            margin: 0;
+        }
+        .button {
+            color: #fff;
+        }
+    }
+}

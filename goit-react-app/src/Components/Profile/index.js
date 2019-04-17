@@ -8,7 +8,7 @@ class Profile extends Component {
 
     render () {
 
-        const {...user} = this.props;
+        const { name, tag, location, avatar, stats } = this.props.user;
 
         return (
             <Card className='profile-wrapper'>
@@ -16,27 +16,27 @@ class Profile extends Component {
                     component="img"
                     alt="user avatar"
                     className='profile-avatar'
-                    image="https://i.pinimg.com/originals/a0/40/66/a04066a2d1fcf25df39c599e093995c8.jpg"
+                    image={avatar}
                     title="Petra Marica"
                 />
                 <CardContent className='profile-discription'>
                     <div className='profile-about'>
-                        <div className="name">Petra Marica</div>
-                        <div className="tag">@pmarica</div>
-                        <div className="location">Salvador, Brasil</div>
+                        <div className="name">{name}</div>
+                        <div className="tag">{tag}</div>
+                        <div className="location">{location}</div>
                     </div>    
                     <div className='profile-social'>
-                        <CardActionArea className='profile-social-tab'>
+                        <CardActionArea className='profile-social-stats'>
                             <p className="label">Followers</p>
-                            <p className="quantity">1000</p>
+                            <p className="quantity">{stats.followers}</p>
                         </CardActionArea>
-                        <CardActionArea className='profile-social-tab'>
+                        <CardActionArea className='profile-social-stats'>
                             <p className="label">Views</p>
-                            <p className="quantity">2000</p>
+                            <p className="quantity">{stats.views}</p>
                         </CardActionArea>
-                        <CardActionArea className='profile-social-tab'>
+                        <CardActionArea className='profile-social-stats'>
                             <p className="label">Likes</p>
-                            <p className="quantity">3000</p>
+                            <p className="quantity">{stats.likes}</p>
                         </CardActionArea>
                     </div>
                 </CardContent>
