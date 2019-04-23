@@ -8,7 +8,7 @@ class PricingPlan extends Component {
     render () {
         return (
             <div className="pricing-plan">
-                <PricingItem></PricingItem>
+                <PricingItem/>
             </div>
         )
     }

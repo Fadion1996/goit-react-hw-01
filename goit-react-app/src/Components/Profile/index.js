@@ -8,7 +8,7 @@ class Profile extends Component {
 
     render () {
 
-        const { name, tag, location, avatar, stats } = this.props.user;
+        const { name, tag, location, avatar, stats } = this.props.userInfo;
 
         return (
             <Card className='profile-wrapper'>
@@ -24,7 +24,7 @@ class Profile extends Component {
                         <div className="name">{name}</div>
                         <div className="tag">{tag}</div>
                         <div className="location">{location}</div>
-                    </div>    
+                    </div>
                     <div className='profile-social'>
                         <CardActionArea className='profile-social-stats'>
                             <p className="label">Followers</p>
